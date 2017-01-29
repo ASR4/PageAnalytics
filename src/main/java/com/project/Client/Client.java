@@ -10,7 +10,7 @@ import org.apache.http.impl.client.HttpClientBuilder;
 
 public class Client {
 public HttpResponse apiResponse(String url) throws ClientProtocolException, IOException{
-		
+	//final String USER_AGENT = "Mozilla/5.0";
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(url);
 		
